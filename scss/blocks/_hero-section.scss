@@ -1,0 +1,67 @@
+.hero-section{
+    padding: 200px 0;
+    background-image: url(../../img/aboutRedDisk.svg);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-color: $Midnight-Green;
+}
+.hero-section__wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.hero-section__title{
+    margin: 0;
+    font-size: 64px;
+    color: $White;
+}
+.hero-section__text{
+    &::before{
+        display: block;
+        position: absolute;
+        top: -50px;
+        width: 50px;
+        height: 4px;
+        background-color: $light-coral;
+        content: '';
+    }
+    position: relative;
+    max-width: 730px;
+    width: 100%;
+    font-size: 18px;
+    line-height: 28px;
+    color: $White;
+}
+
+@include breakpoint-down(1000px){
+    .hero-section__text{
+        width: 650px;
+    }
+}
+@include breakpoint-down(900px){
+    .hero-section__text{
+        width: 500px;
+    }
+}
+@include breakpoint-down(750px){
+    .hero-section__wrapper{
+        display: block;
+    }
+    .hero-section__title{
+        margin: 0 auto;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+    .hero-section__text{
+        &::before{
+            display: none;
+        }
+        margin: 0 auto;
+        text-align: center;
+    }
+}
+@include breakpoint-down(520px){
+    .hero-section__text{
+        width: 100%;
+    }
+}

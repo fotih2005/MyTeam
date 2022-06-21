@@ -1,0 +1,102 @@
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+
+.users-section{
+    padding: 150px 0;
+    background-color: $JungleGreen;
+}
+.users-section__list{
+    @include list-unstyled;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: -30px;
+}
+.users-section__item{
+    position: relative;
+    margin-right: 30px;
+    width: 340px;
+    color: $White;
+}
+.users-section__item-img{
+    display: block;
+    margin: 0 auto;
+}
+.users-section__item-title{
+    margin: 0;
+    display: block;
+    text-align: center;
+}
+.users-section__item-text{
+    text-align: center;
+}
+.users-section__item-back-text{
+    text-align: center;
+}
+.users-section__item-link-wrapper{
+    display: flex;
+    justify-content: center;
+}
+.users-section__item-back-link{
+    margin-right: 20px;
+    display: block;
+    text-decoration: none;
+    color: $White;
+}
+.users-section__item-front{
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    backface-visibility: hidden;
+    transition: transform 0.3s ease;
+}
+.users-section__item-back{
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    display: flex;
+    padding-bottom: 56px;
+    flex-direction: column;
+    place-items: center;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+    transition: transform 0.3s ease;
+    overflow: auto;
+}
+.users-section__item--active 
+.users-section__item-back{
+  transform: rotateY(360deg);
+}
+.users-section__item--active 
+.users-section__item-front{
+  transform: rotatey(180deg);
+}
+.users-section__btn{
+    position: absolute;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    border: none;
+    top: 100%;
+    left: auto;
+    right: 150px;
+    background-color: $light-coral;
+    transition: transform 0.3s ease;
+}
+.users-section__item--active 
+.users-section__btn{
+    transform: rotate(45deg);
+    background-color: #79C8C7;
+}

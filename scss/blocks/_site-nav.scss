@@ -1,0 +1,17 @@
+.site-nav__list{
+    @include list-unstyled;
+    display: flex;
+}
+.site-nav__item{
+    &:not(:last-child){
+        margin-right: 40px;
+    }
+}
+.site-nav__item-link{
+    &:hover{
+        color: $light-coral;
+    }
+    text-decoration: none;
+    color: $White;
+    transition: color 0.3s ease;
+}
