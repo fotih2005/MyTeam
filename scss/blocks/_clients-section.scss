@@ -1,0 +1,28 @@
+.clients-section{
+    padding: 140px 0;
+    background-color: $SacramentoStateGreen;
+}
+.clients-section__wrapper{
+
+}
+.clients-section__title{
+    margin: 0;
+    margin-bottom: 50px;
+    font-size: 48px;
+    text-align: center;
+    color: $White;
+}
+.clieants-section__content-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;  
+    width: 100%;
+}
+.clients-section__img{
+    margin-right: 30px;
+    display: block;
+}
+
+@include breakpoint-down(350px){
+    margin-right: 0;
+}

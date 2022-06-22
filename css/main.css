@@ -624,6 +624,13 @@ img {
   background-color: #004047;
 }
 
+.users-section__title {
+  display: block;
+  text-align: center;
+  font-size: 48px;
+  color: #fff;
+}
+
 .users-section__list {
   margin: 0;
   padding: 0;
@@ -642,7 +649,11 @@ img {
 .users-section__item {
   position: relative;
   margin-right: 30px;
+  margin-bottom: 80px;
+  padding: 20px;
+  padding-bottom: 50px;
   width: 340px;
+  background-color: #012F34;
   color: #fff;
 }
 
@@ -701,6 +712,7 @@ img {
 .users-section__item-back {
   height: 100%;
   position: absolute;
+  padding-top: 20px;
   z-index: 1;
   top: 0;
   left: 0;
@@ -742,7 +754,7 @@ img {
   height: 56px;
   border-radius: 50%;
   border: none;
-  top: 100%;
+  top: 90%;
   left: auto;
   right: 150px;
   background-color: #F67E7E;
@@ -757,5 +769,39 @@ img {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
   background-color: #79C8C7;
+}
+
+.clients-section {
+  padding: 140px 0;
+  background-color: #012F34;
+}
+
+.clients-section__title {
+  margin: 0;
+  margin-bottom: 50px;
+  font-size: 48px;
+  text-align: center;
+  color: #fff;
+}
+
+.clieants-section__content-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+.clients-section__img {
+  margin-right: 30px;
+  display: block;
+}
+
+@media only screen and (max-width: 350px) {
+  margin-right: 0;
 }
 /*# sourceMappingURL=main.css.map */
