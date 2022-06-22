@@ -15,6 +15,12 @@
     padding: 150px 0;
     background-color: $JungleGreen;
 }
+.users-section__title{
+    display: block;
+    text-align: center;
+    font-size: 48px;
+    color: $White;
+}
 .users-section__list{
     @include list-unstyled;
     display: flex;
@@ -25,7 +31,11 @@
 .users-section__item{
     position: relative;
     margin-right: 30px;
+    margin-bottom: 80px;
+    padding: 20px;
+    padding-bottom: 50px;
     width: 340px;
+    background-color: #012F34;
     color: $White;
 }
 .users-section__item-img{
@@ -63,6 +73,7 @@
 .users-section__item-back{
     height: 100%;
     position: absolute;
+    padding-top: 20px;
     z-index: 1;
     top: 0;
     left: 0;
@@ -89,7 +100,7 @@
     height: 56px;
     border-radius: 50%;
     border: none;
-    top: 100%;
+    top: 90%;
     left: auto;
     right: 150px;
     background-color: $light-coral;
